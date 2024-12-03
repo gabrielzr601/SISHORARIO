@@ -463,9 +463,9 @@ $result = $conn->query($sql);
     }
     function validarSeccion(input) {
     // Permite solo una letra (a-z o A-Z)
-    input.value = input.value.replace(/[^a-zA-Z]/g, ''); // Elimina caracteres no alfabéticos
+    input.value = input.value.replace(/[^a-zA-Z]/g, ''); // Elimina caracteres no alfabéticos.
     if (input.value.length > 1) {
-        input.value = input.value.charAt(0); // Limita a solo 1 letra.
+        input.value = input.value.charAt(0); // Limita a solo 1 letra
     }
     }  
     
